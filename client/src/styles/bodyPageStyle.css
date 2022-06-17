@@ -1,0 +1,125 @@
+/* black body background when background-image is not loaded */
+.bodyStyle{
+    background-color: black;
+    color: white;
+}
+
+.fionaImage{
+    border-radius:  20%;
+    height: auto;
+    width: 15%;
+    /* border: 1px solid lightgreen; */
+    /* display: block; */
+    -webkit-transform:rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    transform: rotate(5deg);
+
+    box-shadow: 10px 10px 5px lightslategray;
+    -moz-box-shadow: 10px 10px 5px lightslategray;
+    -webkit-box-shadow: 10px 10px 5px lightslategray;
+    -khtml-box-shadow: 10px 10px 5px lightslategray; 
+    float: left;
+
+}
+
+.textIntroStyle{
+    /* background: #218aff; */
+    background: transparent;
+    color: white;
+    /* width: 6px;
+    height: auto; */
+    padding: 0.5em 1em;
+    position: relative;
+    border-radius: 0.50em 0.50em 0.50dm 0.50em;
+    /* box-shadow: 7px 30px 40px #665500; */
+    transition: 0.5s;
+    animation: speech .7s linear 1;
+    display: flex;
+    padding-top: 100px;
+    text-overflow: ellipsis;
+    font-size: 120%;
+}
+
+.nameStyle{
+    color: lightgreen;
+    font-size: 35px;
+    font-family: cursive;
+}
+
+.paddingLeft{
+    padding-left: 20%;
+    display: block;
+}
+
+.sloganStyle{
+    font-family: sans-serif;
+    color: lightgreen;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 0%;
+    font-size: 120%;
+    
+}
+
+.centerStyle{
+    width:100%;
+    text-align: center;
+}
+
+.fionaResumeImage{
+    border-radius:  20%;
+    height: auto;
+    width: 15%;
+    display: inline-block;
+    -webkit-transform:rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+
+.iconStyle{
+    color: rgb(38, 142, 133);
+    border-color: rgb(38, 142, 133);
+    font-size: 18px;
+}
+
+.secondColResume{
+    width: 90%;
+    color: whitesmoke;
+    line-height: 130%;
+    text-align: left; 
+}
+
+.borderText{
+    width: 90%;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: transparent;
+    padding: 1em;
+    text-align: left;
+    background-color: rgb(38, 142, 133);
+}
+
+.h2Spacing{
+    line-height: 5%;
+}
+
+.ulSpacing{
+    line-height: 150%;
+}
+
+.justifyRight{
+    text-align: right;
+}
+
+.justifyLeft{
+    text-align: left;
+}
+
+.yearLocStyle{
+    font-style: italic;
+    color: rgb(111, 211, 203);
+}
