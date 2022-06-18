@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/fionaPort/static/css/main.29b17848.css",
-    "main.js": "/fionaPort/static/js/main.680f2780.js",
+    "main.css": "/fionaPort/static/css/main.1860056d.css",
+    "main.js": "/fionaPort/static/js/main.ca536c7f.js",
     "static/js/787.8cc7592d.chunk.js": "/fionaPort/static/js/787.8cc7592d.chunk.js",
     "static/media/fiona_pp.jpg": "/fionaPort/static/media/fiona_pp.30cf52ecd121313d3efa.jpg",
     "index.html": "/fionaPort/index.html",
-    "main.29b17848.css.map": "/fionaPort/static/css/main.29b17848.css.map",
-    "main.680f2780.js.map": "/fionaPort/static/js/main.680f2780.js.map",
+    "main.1860056d.css.map": "/fionaPort/static/css/main.1860056d.css.map",
+    "main.ca536c7f.js.map": "/fionaPort/static/js/main.ca536c7f.js.map",
     "787.8cc7592d.chunk.js.map": "/fionaPort/static/js/787.8cc7592d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.29b17848.css",
-    "static/js/main.680f2780.js"
+    "static/css/main.1860056d.css",
+    "static/js/main.ca536c7f.js"
   ]
 }
