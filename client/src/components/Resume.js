@@ -8,6 +8,9 @@ import FmdGoodIcon from '@mui/icons-material/FmdGood';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import '.././styles/progressBarStyle.css';
 import '.././styles/bodyPageStyle.css';
+import { Link } from 'react-router-dom';
+import Button from '@mui/material/Button';
+
 const Resume = () => {
     return(
         <div className="centerStyle">
@@ -17,14 +20,28 @@ const Resume = () => {
                 <Grid container spacing={2}>
                     <Grid item xs={6} md={4}>
                         <p><img src={fionaPP} className="fionaResumeImage" alt="profile"></img></p>
-                        <div><EmailIcon className="iconStyle"/></div>
-                        <div>fiona.nguyen5587@gmail.com</div>
+                        
+                        <div><Link
+                            to='#'
+                            onClick={(e) => {
+                            window.location.href = "mailto:fiona.nguyen5587@gmail.com";
+                            e.preventDefault();
+                            }}
+                            ><EmailIcon className="iconStyle"/></Link>
+                        </div>
+
                         <p></p>
-                        <div><FmdGoodIcon className="iconStyle"/></div>
-                        <div>Huntsville, AL</div>
+                        <a href="https://www.google.com/maps/place/Huntsville,+Alabama/@34.7011063,-86.9406307,10z/data=!3m1!4b1!4m5!3m4!1s0x88626b67cda2898d:0x9a2c7e89c804566b!8m2!3d34.7303688!4d-86.5861037"
+                            target="_blank" rel="noopener noreferrer"
+                            ><Button><FmdGoodIcon className="iconStyle"/></Button>
+                        </a>
+
                         <p></p>
-                        <div><LinkedInIcon className="iconStyle"/></div>
-                        <div>linkedin.com/in/fiona-nguyen</div>
+                        <a href="https://www.linkedin.com/in/fiona-nguyen-9b412034"
+                            target="_blank" rel="noopener noreferrer"
+                            ><Button><LinkedInIcon className="iconStyle"/></Button>
+                        </a>
+
                         <p></p>
 
                         <strong className="iconStyle">SKILLS</strong>
@@ -99,10 +116,10 @@ const Resume = () => {
 
                         <strong className="iconStyle">Source Code Management</strong>
                         <p></p>
-                        <div>BitBucket</div>
-                        <div>Gitlab</div>
-                        <div>DevOps</div>
-                        <div>Github</div>
+                        <div className='smallFontSize'>BitBucket</div>
+                        <div className='smallFontSize'>Gitlab</div>
+                        <div className='smallFontSize'>DevOps</div>
+                        <div className='smallFontSize'>Github</div>
                     </Grid>
                     <Grid item xs={6} md={8}>
                         <div className='secondColResume'>

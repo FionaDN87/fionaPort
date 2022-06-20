@@ -1,4 +1,6 @@
 .appBarStyle {
     background-color: black;
-    color: white;
+    font-size: large;
+    min-height: 10px;
+    height: 70px;
 }

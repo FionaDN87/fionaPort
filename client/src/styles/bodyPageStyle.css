@@ -123,3 +123,7 @@
     font-style: italic;
     color: rgb(111, 211, 203);
 }
+
+.smallFontSize{
+    font-size: 70%;
+}

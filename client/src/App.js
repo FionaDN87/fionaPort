@@ -16,8 +16,9 @@ function App() {
     <div>
       <ResponsiveAppBar></ResponsiveAppBar>
       <Routes>
-        <Route exact path='/Home' element={<Home/>} />
-        <Route exact path='/' element={<Home/>} />
+        <Route path='/Home' element={<Home/>} />
+        <Route path='/fionaPort' element={<Home/>} />
+        <Route path='/' element={<Home/>} />
         <Route exact path='/Resume' element={<Resume/>} />
         <Route exact path='/Contact' element={<Contact/>} />
         <Route exact path='/Work' element={<Work/>} />

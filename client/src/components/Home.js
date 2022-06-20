@@ -12,7 +12,7 @@ const Home = () => {
         <div>
             <img src={fionaPP} className="fionaImage" alt='profile'></img>
             <div className="textIntroStyle">Hello, I'm <strong className='nameStyle'> {name} </strong>, 
-                Full-stack Software Engineer Based in Huntsville, AL
+                Full-stack Software Engineer Based in Huntsville, AL, USA
             </div>
             <div className='paddingLeft'>Follow me<a href="https://www.linkedin.com/in/fiona-nguyen-9b412034"
                 target="_blank" rel="noopener noreferrer"

@@ -16,8 +16,8 @@ const ResponsiveAppBar = () => {
   return (
     <AppBar  position="static">
       <Container className="appBarStyle" maxWidth="false">
-        <Toolbar disableGutters>
-          <FaceRetouchingNaturalIcon />
+        <Toolbar disableGutters className='appBarStyle'>
+          <FaceRetouchingNaturalIcon fontSize="large" />
           <Box>
             {pages.map(page => (
               <Link to={`/${page}`} key={page} ><Button 
