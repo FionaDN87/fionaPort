@@ -14,7 +14,7 @@ import Button from '@mui/material/Button';
 const Resume = () => {
     return(
         <div className="centerStyle">
-            Download Resume <DownloadIcon/>
+            Download Resume <a href='.././resume/PDF_Nguyen,Fiona_Resume_2022.PDF' download><DownloadIcon/></a>
             <p></p>
             <Box sx={{ flexGrow: 1}}>
                 <Grid container spacing={2}>
