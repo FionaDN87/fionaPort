@@ -10,11 +10,11 @@ import '.././styles/progressBarStyle.css';
 import '.././styles/bodyPageStyle.css';
 import { Link } from 'react-router-dom';
 import Button from '@mui/material/Button';
-
+import FionaResume from '.././resume/PDF_Nguyen, Fiona_Resume_2022.PDF';
 const Resume = () => {
     return(
         <div className="centerStyle">
-            Download Resume <a href='.././resume/PDF_Nguyen,Fiona_Resume_2022.PDF' download><DownloadIcon/></a>
+            <input type="button" onClick={() => setTimeout(() => window.open(FionaResume), 100)} value="Download Resume" />
             <p></p>
             <Box sx={{ flexGrow: 1}}>
                 <Grid container spacing={2}>
