@@ -7,15 +7,24 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import YouTubeIcon from '@mui/icons-material/YouTube';
+import '.././styles/workPageStyle.css';
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
 
 const defaultProps = {
     text:'',
     url:'',
     projectName: '',
+    githubURL: '',
+    youTubeURL: '',
+    details:''
 }
 export default function MediaCard(props) {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ width:1 }}>
       <CardMedia
         component="img"
         height="140"
@@ -31,9 +40,29 @@ export default function MediaCard(props) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small"><GitHubIcon /></Button>
-        <Button size="small"><YouTubeIcon /></Button>
+      <a href={props.githubURL}
+                  target="_blank" rel="noopener noreferrer"
+                  ><Button size="large"><GitHubIcon /></Button></a>
+      <a href={props.youTubeURL}
+                  target="_blank" rel="noopener noreferrer"
+                  ><Button size="large"><YouTubeIcon /></Button></a>
+      <br></br>
+      
       </CardActions>
+      <Accordion className='cardActionStyle'>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+        >
+          <Typography className='detailStyle'>Details</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+            {props.details}
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
     </Card>
   );
 }
