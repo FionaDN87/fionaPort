@@ -1,0 +1,13 @@
+.cardActionStyle{
+  display: flex;
+  flex-direction: column;
+}
+
+.detailStyle{
+  color: rgb(0, 81, 255);
+}
+
+.paddingStyle{
+  padding-left: 2%;
+  padding-right: 2%;
+}
