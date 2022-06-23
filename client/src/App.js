@@ -15,7 +15,7 @@ function App() {
   return (
     <div>
       <ResponsiveAppBar></ResponsiveAppBar>
-      <Routes>
+      <Routes basename="/fionaPort">
         <Route path='/Home' element={<Home/>} />
         <Route path='/fionaPort' element={<Home/>} />
         <Route path='/' element={<Home/>} />
