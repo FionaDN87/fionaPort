@@ -1,6 +1,7 @@
 import React from 'react';
 import MediaCard from './ProjectCard.js';
 import OnlineStoreImage from '.././images/Online_Store.PNG';
+import HandiparkImage from '.././images/HandiparkImage.PNG';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import '.././styles/workPageStyle.css';
@@ -39,10 +40,10 @@ const Work = () => {
             <Grid item xs={12} sm={6} md={4}>
             <MediaCard 
             text="Parking Management System for Disabilities" 
-          
+            url={HandiparkImage}
             projectName="HANDIPARK"
             githubURL="https://github.com/FionaDN87/handipark_DiepN.git"
-            youTubeURL=""
+            youTubeURL="https://youtu.be/Ycxjt9l6bz8"
             details="A mobile app (Android & iOS) that was based on the client-server model where 
             the server-side uses Firebase Realtime database to keep all the data and business logics. 
             Deploying Google map and Firestore, the client-side enables users to look up/search 
