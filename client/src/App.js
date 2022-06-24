@@ -16,12 +16,12 @@ function App() {
     <div>
       <ResponsiveAppBar></ResponsiveAppBar>
       <Routes basename="/fionaPort">
-        <Route path='/Home' element={<Home/>} />
+        <Route path='/fionaPort/Home' element={<Home/>} />
         <Route path='/fionaPort' element={<Home/>} />
         <Route path='/' element={<Home/>} />
-        <Route exact path='/Resume' element={<Resume/>} />
-        <Route exact path='/Contact' element={<Contact/>} />
-        <Route exact path='/Work' element={<Work/>} />
+        <Route exact path='/fionaPort/Resume' element={<Resume/>} />
+        <Route exact path='/fionaPort/Contact' element={<Contact/>} />
+        <Route exact path='/fionaPort/Work' element={<Work/>} />
       </Routes>
       <div className="sloganStyle"><LocalDiningIcon/> EAT 
                                     <HotelIcon/> SLEEP 

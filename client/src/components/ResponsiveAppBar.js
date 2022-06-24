@@ -20,7 +20,7 @@ const ResponsiveAppBar = () => {
           <FaceRetouchingNaturalIcon fontSize="large" />
           <Box>
             {pages.map(page => (
-              <Link to={`/${page}`} key={page} ><Button 
+              <Link to={`/fionaPort/${page}`} key={page} ><Button 
                 onClick={() => handleClickMenu(page)}
               >
                 {page}
