@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/fionaPort/static/css/main.e64d5cae.css",
-    "main.js": "/fionaPort/static/js/main.c3763cc5.js",
-    "static/js/787.8cc7592d.chunk.js": "/fionaPort/static/js/787.8cc7592d.chunk.js",
-    "static/media/Online_Store.PNG": "/fionaPort/static/media/Online_Store.f6d4d6c89e2f1b811a16.PNG",
-    "static/media/PDF_Nguyen, Fiona_Resume_2022.PDF": "/fionaPort/static/media/PDF_Nguyen, Fiona_Resume_2022.53a765e5afa533d5f1cf.PDF",
-    "static/media/fiona_pp.jpg": "/fionaPort/static/media/fiona_pp.30cf52ecd121313d3efa.jpg",
-    "index.html": "/fionaPort/index.html",
-    "main.e64d5cae.css.map": "/fionaPort/static/css/main.e64d5cae.css.map",
-    "main.c3763cc5.js.map": "/fionaPort/static/js/main.c3763cc5.js.map",
-    "787.8cc7592d.chunk.js.map": "/fionaPort/static/js/787.8cc7592d.chunk.js.map"
+    "main.css": "/fionaPort/index.html/static/css/main.806d4abc.css",
+    "main.js": "/fionaPort/index.html/static/js/main.2477388f.js",
+    "static/js/787.8cc7592d.chunk.js": "/fionaPort/index.html/static/js/787.8cc7592d.chunk.js",
+    "static/media/Online_Store.PNG": "/fionaPort/index.html/static/media/Online_Store.f6d4d6c89e2f1b811a16.PNG",
+    "static/media/PDF_Nguyen, Fiona_Resume_2022.PDF": "/fionaPort/index.html/static/media/PDF_Nguyen, Fiona_Resume_2022.53a765e5afa533d5f1cf.PDF",
+    "static/media/HandiparkImage.PNG": "/fionaPort/index.html/static/media/HandiparkImage.a5607af0a90e34598975.PNG",
+    "static/media/fiona_pp.jpg": "/fionaPort/index.html/static/media/fiona_pp.30cf52ecd121313d3efa.jpg",
+    "index.html": "/fionaPort/index.html/index.html",
+    "main.806d4abc.css.map": "/fionaPort/index.html/static/css/main.806d4abc.css.map",
+    "main.2477388f.js.map": "/fionaPort/index.html/static/js/main.2477388f.js.map",
+    "787.8cc7592d.chunk.js.map": "/fionaPort/index.html/static/js/787.8cc7592d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e64d5cae.css",
-    "static/js/main.c3763cc5.js"
+    "static/css/main.806d4abc.css",
+    "static/js/main.2477388f.js"
   ]
 }
