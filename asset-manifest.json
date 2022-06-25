@@ -1,19 +1,21 @@
 {
   "files": {
     "main.css": "/fionaPort/static/css/main.806d4abc.css",
-    "main.js": "/fionaPort/static/js/main.3ac334c4.js",
+    "main.js": "/fionaPort/static/js/main.e83bbdf7.js",
     "static/js/787.8cc7592d.chunk.js": "/fionaPort/static/js/787.8cc7592d.chunk.js",
     "static/media/Online_Store.PNG": "/fionaPort/static/media/Online_Store.f6d4d6c89e2f1b811a16.PNG",
     "static/media/PDF_Nguyen, Fiona_Resume_2022.PDF": "/fionaPort/static/media/PDF_Nguyen, Fiona_Resume_2022.53a765e5afa533d5f1cf.PDF",
     "static/media/HandiparkImage.PNG": "/fionaPort/static/media/HandiparkImage.a5607af0a90e34598975.PNG",
+    "static/media/SimsoImage.PNG": "/fionaPort/static/media/SimsoImage.8d3c20e288d86379c94e.PNG",
+    "static/media/PawprintImage.PNG": "/fionaPort/static/media/PawprintImage.2b17acbf97e31e9ba421.PNG",
     "static/media/fiona_pp.jpg": "/fionaPort/static/media/fiona_pp.30cf52ecd121313d3efa.jpg",
     "index.html": "/fionaPort/index.html",
     "main.806d4abc.css.map": "/fionaPort/static/css/main.806d4abc.css.map",
-    "main.3ac334c4.js.map": "/fionaPort/static/js/main.3ac334c4.js.map",
+    "main.e83bbdf7.js.map": "/fionaPort/static/js/main.e83bbdf7.js.map",
     "787.8cc7592d.chunk.js.map": "/fionaPort/static/js/787.8cc7592d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.806d4abc.css",
-    "static/js/main.3ac334c4.js"
+    "static/js/main.e83bbdf7.js"
   ]
 }
