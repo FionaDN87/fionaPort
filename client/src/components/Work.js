@@ -2,10 +2,11 @@ import React from 'react';
 import MediaCard from './ProjectCard.js';
 import OnlineStoreImage from '.././images/Online_Store.PNG';
 import HandiparkImage from '.././images/HandiparkImage.PNG';
+import SimsoImage from '.././images/SimsoImage.PNG';
+import PawprintImage from '.././images/PawprintImage.PNG';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import '.././styles/workPageStyle.css';
-
 
 const Work = () => {
     return( 
@@ -23,10 +24,10 @@ const Work = () => {
             <Grid item xs={12} sm={6} md={4}>
             <MediaCard 
             text="A social networking mobile app" 
-            
+            url={SimsoImage}
             projectName="SIMSO"
             githubURL="https://github.com/FionaDN87/SIMSO.git"
-            youTubeURL=""
+            youTubeURL="https://youtu.be/Rd52lAB6fQ0"
             details="A simple social media app (Android & iOS) designed with different views for the 
             users. User authentication was based on simple login or fingerprint recognition. 
             Searching for friends, friend management, content filter and content addition, tags, 
@@ -57,10 +58,10 @@ const Work = () => {
             <Grid item xs={12} sm={6} md={4}>
             <MediaCard 
             text="Pet Sitting Application" 
-            
+            url={PawprintImage}
             projectName="PAWPRINT"
             githubURL="https://github.com/FionaDN87/pawprint_DiepN.git"
-            youTubeURL=""
+            youTubeURL="https://youtu.be/HWOlwnfwKmY"
             details="A mobile app (Android & iOS) was built for interaction between pet sitters 
             and customers. PawPrint utilizes cameras, Firebase Storage, user authentication to create, 
             store, and retrieve data respectively. Google map was implemented inside the app display 
