@@ -8,7 +8,12 @@ import { auto } from '@popperjs/core';
 
 const Contact = () => {
     const submit = () => {
-        if (name && email && message) {
+        isValidEmail(email);
+        if(alertEmail === true){
+            return;
+        }
+
+        else if (name && email && message && alertEmail === false) {
            const serviceId = 'service_vdb5u4t';
            const templateId = 'template_o9rossp';
            const userId = 'OQkpPSe66j-TNNpSX';
@@ -26,34 +31,30 @@ const Contact = () => {
             setEmail('');
             setMessage('');
             setEmailSent(true);
-        } else {
+        }
+        else {
             alert('Please fill in all fields.');
         }
     }
     const isValidEmail = email => {
         const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         if(!regex.test(email))
-        return <div>'Invalid Email Address'</div>
-        // return regex.test(String(email).toLowerCase());
-    };
-
-    const EmailValidation = (event) => {
-        var form = document.getElementById("form");
-        var email = document.getElementById("email");
-        const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-     
-        if(email.match(regex)){
-            return;
+        {
+            alert("Invalid email");
+            setAlertEmail(true);
         }
-    } 
+    };
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [emailSent, setEmailSent] = useState(false);
+
+    const [alertEmail, setAlertEmail]= useState(false);
+
     return (
         <div className='inputStyle'>
-        <h3>Leave a message</h3> 
+        <h1>Leave a message</h1> 
         <input 
         type="text" 
         placeholder="Enter your Name" 
@@ -65,7 +66,10 @@ const Contact = () => {
         placeholder="Enter your email address" 
         value={email} 
         onChange={
-            e => setEmail(e.target.value)} />
+            e => 
+            {
+                setEmail(e.target.value);
+            }} />
         
         
         <textarea style={{width:"100%", height: "200px"}} 

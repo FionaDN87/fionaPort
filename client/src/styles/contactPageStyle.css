@@ -5,13 +5,15 @@
     gap: 5px;
     margin: auto;
     padding: 25px;
+
 }
 
 .buttonStyle{
     background: rgb(15, 61, 104);
     color: white;
-    width: 30%;
+    width: 70%;
     border-radius: 12px;
+    font-size: 30px;
 }
 
 .formStyle{
