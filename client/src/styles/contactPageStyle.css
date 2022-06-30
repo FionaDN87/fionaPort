@@ -2,18 +2,17 @@
     display:flex;
     flex-direction: column;
     max-width: 500px;
-    gap: 5px;
+    gap: 10px;
     margin: auto;
     padding: 25px;
-
+    background: white;
 }
 
 .buttonStyle{
     background: rgb(15, 61, 104);
     color: white;
-    width: 70%;
+    width: 30%;
     border-radius: 12px;
-    font-size: 30px;
 }
 
 .formStyle{
@@ -21,4 +20,17 @@
     outline: none;
     border-radius: 12px;
     color: #fff;
+}
+
+.textfieldStyle{
+    color: white;
+    border: 1px solid green;
+}
+
+.textStyle{
+    color: rgba(9, 11, 122, 0.952)
+}
+
+.alertStyle{
+    color: red;
 }
