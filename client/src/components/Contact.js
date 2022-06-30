@@ -93,7 +93,7 @@ const Contact = () => {
           onChange={handleEmail}
         />
         {!regex.test(email)
-        ? (<div className='alertStyle'><PanToolAltIcon /> Invalid Email required</div>)
+        ? (<div className='alertStyle'><PanToolAltIcon /> Valid Email required</div>)
         : (<div></div>)
         }
    
