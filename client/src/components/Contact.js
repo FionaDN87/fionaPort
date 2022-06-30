@@ -1,19 +1,25 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
-import TextField from '@mui/material/TextField';
+import {TextField, Box} from '@material-ui/core';
 import '.././styles/contactPageStyle.css';
-import Box from '@mui/material/Box';
-import { formControlClasses } from '@mui/material';
-import { auto } from '@popperjs/core';
+import PanToolAltIcon from '@mui/icons-material/PanToolAlt';
 
+const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 const Contact = () => {
+    const error = false;
     const submit = () => {
-        isValidEmail(email);
-        if(alertEmail === true){
-            return;
+        if(name.length <=1){
+            setShowAlertName(true);
+            error =true;
         }
 
-        else if (name && email && message && alertEmail === false) {
+        const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        if(!regex.test(email)){
+        setShowAlertEmail(true);
+        error=true
+        }
+
+        if (name && email && message && error===false) {
            const serviceId = 'service_vdb5u4t';
            const templateId = 'template_o9rossp';
            const userId = 'OQkpPSe66j-TNNpSX';
@@ -31,54 +37,79 @@ const Contact = () => {
             setEmail('');
             setMessage('');
             setEmailSent(true);
-        }
-        else {
+
+            setShowAlertName(false);
+            setShowAlertEmail(false)
+;        } else {
             alert('Please fill in all fields.');
         }
     }
-    const isValidEmail = email => {
-        const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        if(!regex.test(email))
-        {
-            alert("Invalid email");
-            setAlertEmail(true);
-        }
-    };
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [emailSent, setEmailSent] = useState(false);
+    
+    const [showAlertName, setShowAlertName] = useState(false);
+    const [showAlertEmail, setShowAlertEmail] = useState(false);
 
-    const [alertEmail, setAlertEmail]= useState(false);
+    const handleName = (event) => {
+        //Set name
+        setName(event.target.value);
+    }
+
+    const handleEmail= (event) => {
+        //Set Email
+        setEmail(event.target.value)
+    }
+
+    const handleMessage= (event) => {
+        //Set message
+        setMessage(event.target.value);
+    }
 
     return (
         <div className='inputStyle'>
-        <h1>Leave a message</h1> 
-        <input 
-        type="text" 
-        placeholder="Enter your Name" 
-        value={name} 
-        onChange={e => setName(e.target.value)} />
+        <h2 className='textStyle'>Leave a message</h2>
+        <TextField
+          variant="filled"
+          id="outlined-basic"
+          label="Name"
+          value={name}
+          inputProps={{ style: { fontFamily: 'Arial', color: 'black'}}} 
+          onChange={handleName}  
+        />
+        {name.length <=1
+        ?  (<div className='alertStyle'><PanToolAltIcon /> Minimum characters 2 required</div>)
+        : (<div></div>)
+        }
 
-        <input 
-        type="email" 
-        placeholder="Enter your email address" 
-        value={email} 
-        onChange={
-            e => 
-            {
-                setEmail(e.target.value);
-            }} />
-        
-        
-        <textarea style={{width:"100%", height: "200px"}} 
-        placeholder="Enter your message" 
-        value={message} 
-        onChange={e => setMessage(e.target.value)}>
+        <TextField
+          variant="filled"
+          id="outlined-basic"
+          label="Email Address"
+          value={email}
+          inputProps={{ style: { fontFamily: 'Arial', color: 'black'}}} 
+          onChange={handleEmail}
+        />
+        {!regex.test(email)
+        ? (<div className='alertStyle'><PanToolAltIcon /> Invalid Email required</div>)
+        : (<div></div>)
+        }
+   
+        <TextField
+          id="filled-multiline-flexible"
+          label="Message"
+          multiline
+          maxRows={1000}
+          minRows={4}
+          value={message}
+          onChange={handleMessage}
+          variant="filled"
+        />
 
-        </textarea>
-        {emailSent && <p>Thank you for your message, I will get in touch with you soon.</p>}
+
+        {emailSent && <p className='textStyle'>Thank you for your message, I will get in touch with you soon.</p>}
             <button className='buttonStyle' onClick={submit}>Send Message</button>
         </div>
     );
