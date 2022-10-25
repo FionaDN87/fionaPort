@@ -10,7 +10,7 @@ import '.././styles/progressBarStyle.css';
 import '.././styles/bodyPageStyle.css';
 import { Link } from 'react-router-dom';
 import Button from '@mui/material/Button';
-import FionaResume from '.././resume/PDF_Nguyen, Fiona_Resume_2022.PDF';
+import FionaResume from '.././resume/PDF_Nguyen,Fiona_Resume_2022.PDF';
 const Resume = () => {
     return(
         <div className="centerStyle">
@@ -235,6 +235,8 @@ const Resume = () => {
                             </Box>
                             </div>
 
+                            
+
                             <p></p>
                             <div>
                             <strong className="iconStyle">Upward Bound Math Science GAME ON</strong>
@@ -274,6 +276,20 @@ const Resume = () => {
                                 </Grid></Grid>
                             </Box>
                             <div>Grade: Outstanding</div>
+
+                            <p></p>
+                            <strong className="iconStyle">Master of Science in International Business</strong>
+                            <div>University of Nottingham in United Kingdom, Malaysia Campus</div>
+                            <Box sx={{ flexGrow: 1 }} className='yearLocStyle'>
+                            <Grid container spacing={2}>
+                                <Grid item xs={8}>
+                                    <div>May 2012 - Feb 2014</div>
+                                </Grid>
+                                <Grid item xs={4}>
+                                    <div className='justifyRight'>Semenyih, Malaysia</div>
+                                </Grid></Grid>
+                            </Box>
+                            <div>Grade: Pass</div>
 
                             <p></p>
                             <strong className="iconStyle">HONORS & AWARDS</strong>
